@@ -1,5 +1,7 @@
-const fs = require('fs');
 
+
+const fs = require('fs');
+ 
 const text = fs.readFileSync('eslint-errors.txt', 'utf8');
 const lines = text.split(/\r?\n/);
 

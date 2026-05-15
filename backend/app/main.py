@@ -135,12 +135,20 @@ app = FastAPI(
     redoc_url="/redoc" if _settings.debug else None,
 )
 
+from pydantic import BaseModel
+from typing import List
+from fastapi.middleware.cors import CORSMiddleware
 
-# ------------ CORS ------------
+class Settings(BaseModel):
+    cors_origins: List[str] = [
+        "http://localhost:3000",
+        "http://72.61.237.41:3000",
+    ]
 
+settings = Settings()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_settings.cors_origins,
+    allow_origins=settings.cors_origins,
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["Authorization", "Content-Type", "X-CSRF-Token"],

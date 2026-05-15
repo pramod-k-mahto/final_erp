@@ -16,7 +16,7 @@ export { recordActivity, isUserActive };
 // const apiBase = process.env.NEXT_PUBLIC_API_BASE || 'http://72.61.237.41:8000';
 // const apiBase ='http://72.61.237.41:8000';
 
-const apiBase = process.env.NEXT_PUBLIC_API_BASE;
+const apiBase = process.env.NEXT_PUBLIC_API_BASE || "http://72.61.237.41:8000" ;
 
 console.log(apiBase)
 if (!apiBase) {

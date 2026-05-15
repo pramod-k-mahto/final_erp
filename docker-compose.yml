@@ -19,7 +19,6 @@ services:
       - "8000:8000"
     environment:
       DATABASE_URL: postgresql://postgres:postgres@postgres:5432/account_system
-
       # 👇 IMPORTANT: CORS config for FastAPI
       CORS_ORIGINS: http://localhost:3000,http://frontend:3000,http://72.61.237.41:3000
     depends_on:

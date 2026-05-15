@@ -18,7 +18,7 @@ COPY . .
 
 # Environment variables must be present at build time
 # https://nextjs.org/docs/api-reference/next.config.js/environment-variables
-ENV NEXT_PUBLIC_API_BASE=http://localhost:8000
+ENV NEXT_PUBLIC_API_BASE=http://72.61.237.41:8000
 ENV NODE_ENV=production
 
 RUN npm run build

@@ -12,11 +12,11 @@
 /build/
 
 # Environment / secrets
-.env
-.env.local
-.env.development
-.env.test
-.env.production
+# .env
+# .env.local
+# .env.development
+# .env.test
+# .env.production
 
 # Logs
 npm-debug.log*

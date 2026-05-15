@@ -4,7 +4,6 @@ const lines = text.split(/\r?\n/);
 
 let currentFile = null;
 let fileModifications = {};
-
 for (const line of lines) {
   if (line.startsWith('D:\\')) {
     currentFile = line.trim();

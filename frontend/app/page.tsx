@@ -1,4 +1,3 @@
-// Home
 export default function HomePage() {
   return (
     <div className="max-w-xl mx-auto mt-16 bg-white shadow rounded p-8">
